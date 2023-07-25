@@ -8,7 +8,7 @@ import cart from "../../public/cart.png"
 
 const Navbar = () => {
   return (
-    <div className="h-14 text-red-500 md:py-8 md:px-12 p-0 font-bold  flex items-center justify-between bg-white">
+    <div className="h-14 sticky z-50 top-0 text-red-500 md:py-8 md:px-12 p-0 font-bold  flex items-center justify-between bg-white">
       <div className="sm:flex md:hidden p-4 z-10">
       <Image src={logo} width={50} height={50} alt=''/>
       </div>

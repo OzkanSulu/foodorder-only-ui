@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Image from 'next/image'
 import slide1 from "../../public/slide1.png"
 import slide2 from "../../public/slide2.png"
@@ -24,6 +24,13 @@ const data = [{
 
 const Slider = () => {
   const [slide,setSlide] = useState(0);
+
+  useEffect(()=>{
+    const interval= setInterval(()=>{
+      setSlide((prev)=>(prev+1)%data.length)
+    },2000)
+    return ()=> clearInterval(interval)
+  },[])
     
   return (
     <div
