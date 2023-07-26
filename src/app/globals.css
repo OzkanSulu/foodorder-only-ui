@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+@layer base {
+    ::-webkit-scrollbar-thumb{
+    @apply bg-transparent shadow-none
+    }}

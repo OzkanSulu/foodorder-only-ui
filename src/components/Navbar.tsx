@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex gap-5">
         <Link href="/">Homepage</Link>
-        <Link href="/">Menu</Link>
+        <Link href="/menu">Menu</Link>
         <Link href="/">Contact</Link>
       </div>
       <div className='text-xl font-bold'>
